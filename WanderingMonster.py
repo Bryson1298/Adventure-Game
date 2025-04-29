@@ -72,9 +72,9 @@ class WanderingMonster:
             WanderingMonster: A new instance of WanderingMonster.
         """
         monster_types = {
-            "Drake": {"color": (255, 255, 0), "gold": random.randint(50, 150)},
-            "Zombie": {"color": (255, 0, 0), "gold": random.randint(10, 50)},
-            "Skeleton": {"color": (255, 255, 255), "gold": random.randint(20, 75)}
+            "Drake": {"name": "Drake", "color": (255, 255, 0), "gold": random.randint(50, 150)},
+            "Zombie": {"name": "Zombie","color": (255, 0, 0), "gold": random.randint(10, 50)},
+            "Skeleton": {"name": "Skeleton","color": (255, 255, 255), "gold": random.randint(20, 75)}
         }
         monster_name = random.choice(list(monster_types.keys()))
         monster_data = monster_types[monster_name]
